@@ -66,9 +66,13 @@ namespace ChatGpt
                 }
                 else if (key.Key == ConsoleKey.Enter && index == 4)
                 {
-                    Movie.PrintTicketMenu();
+                    Order.OrderAseseption();
                 }
                 else if (key.Key == ConsoleKey.Enter && index == 5)
+                {
+                    Movie.PrintTicketMenu();
+                }
+                else if (key.Key == ConsoleKey.Enter && index == 6)
                 {
                     Menu.ExedMenu();
                 }
@@ -77,10 +81,12 @@ namespace ChatGpt
                     Menu.TimeReservationTicket(index, list);
 
                 }
+                else if (key.Key == ConsoleKey.DownArrow && index == 5) 
+                {
+                    index = 0;
+                }
 
-            } while (key.Key != ConsoleKey.Enter);
-
-            Console.ReadKey();
+            } while (true);
 
         }
         public static void MenuAgainPrint()

@@ -20,6 +20,7 @@ namespace ChatGpt
             "Avatar 2 imax",
             "Home Alone 3d",
             "After 3 3d",
+            "Оплата",
             "Ваши брони",
             "Выход"
         };
